@@ -45,7 +45,7 @@ public class App
                             break;
                         }
 
-                        System.out.println("Soitin lisätty listaan");
+                        System.out.println("Soitin lisätty listaan!");
                         break;
 
                     case 2:
