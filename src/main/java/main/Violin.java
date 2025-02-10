@@ -5,8 +5,7 @@ public class Violin extends StringInstrument {
 
 
     public Violin(String manufacturer, int price, int numberOfStrings) {
-        super(manufacturer, price);
-        this.numberOfStrings = numberOfStrings;
+        super(manufacturer, price, numberOfStrings);
     }
     
     public int getNumberOfStrings() {
