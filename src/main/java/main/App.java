@@ -32,10 +32,10 @@ public class App
                         int setPrice = Integer.parseInt(sc.nextLine());
 
                         if (setInstrumentType.equals("1")) {
-                            Guitar guitar = new Guitar(setManufacturer, setPrice, 6);
+                            Guitar guitar = new Guitar(setManufacturer, setPrice);
                             instruments.add(guitar);
                         } else if (setInstrumentType.equals("2")) {
-                            Violin violin = new Violin(setManufacturer, setPrice, 4);
+                            Violin violin = new Violin(setManufacturer, setPrice);
                             instruments.add(violin);
                         } else if (setInstrumentType.equals("3")) {
                             Drum drum = new Drum(setManufacturer, setPrice);

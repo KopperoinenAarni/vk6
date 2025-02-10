@@ -10,4 +10,5 @@ public class Guitar extends StringInstrument {
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
+
 }
