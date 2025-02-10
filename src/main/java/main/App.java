@@ -49,23 +49,44 @@ public class App
                         break;
 
                     case 2:
-                        for (Instrument instrument : instruments) {
-                            System.out.println(instrument.getDetails());
+                        if (instruments.isEmpty()) {
+                            System.out.println("Ei lisättyjä soittimia.");
+                            break;
                         }
+                        else {
+                            for (Instrument instrument : instruments) {
+                                System.out.println(instrument.getDetails());
+                            }
+                        }
+
+
                         break;
 
                     case 3:
-                        for (Instrument instrument : instruments) {
-                            if (instrument instanceof StringInstrument) {
-                                ((StringInstrument) instrument).tune();
+                        if (instruments.isEmpty()) {
+                            System.out.println("Ei lisättyjä soittimia.");
+                            break;
+                        }
+                        else {
+                            for (Instrument instrument : instruments) {
+                                if (instrument instanceof StringInstrument) {
+                                    ((StringInstrument) instrument).tune();
+                                }
                             }
                         }
                         break;
 
+
                     case 4:
-                        for (Instrument instrument : instruments) {
-                            if (instrument instanceof Drum) {
-                                ((Drum) instrument).playBeat();
+                        if (instruments.isEmpty()) {
+                            System.out.println("Ei lisättyjä soittimia.");
+                            break;
+                        }
+                        else {
+                            for (Instrument instrument : instruments) {
+                                if (instrument instanceof Drum) {
+                                    ((Drum) instrument).playBeat();
+                                }
                             }
                         }
                         break;
