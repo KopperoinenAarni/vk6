@@ -7,9 +7,8 @@ public class StringInstrument extends Instrument {
         super(manufacturer, price);
     }
 
-    public void tune(Instrument instrument) {
-        System.out.println(instrument.getManufacturer() + " viritettiin " + numberOfStrings + " kieltä!");
+    public void tune() {
+        System.out.println(this.manufacturer + " viritettiin " + numberOfStrings + " kieltä!");
     }
-
 
 }
