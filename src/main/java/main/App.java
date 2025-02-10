@@ -50,9 +50,9 @@ public class App
 
                     case 2:
                         for (Instrument instrument : instruments) {
-                            System.out.println("Valmistaja: " + instrument.getManufacturer() + ", Hinta: " + instrument.getPrice() + "e");
+                            System.out.println(instrument.getDetails());
                         }
-                    break;
+                        break;
 
                     case 3:
                         for (Instrument instrument : instruments) {
