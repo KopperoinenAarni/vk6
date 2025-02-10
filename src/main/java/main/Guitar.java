@@ -1,11 +1,10 @@
 package main;
 
 public class Guitar extends StringInstrument {
-    private int numberOfStrings = 6;
+    private final int numberOfStrings = 6;
 
-
-    public Guitar(String manufacturer, int price, int numberOfStrings) {
-        super(manufacturer, price, numberOfStrings);
+    public Guitar(String manufacturer, int price) {
+        super(manufacturer, price, 6);
     }
 
     public int getNumberOfStrings() {
