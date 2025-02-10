@@ -63,33 +63,24 @@ public class App
                         break;
 
                     case 3:
-                        if (instruments.isEmpty()) {
-                            System.out.println("Ei lisättyjä soittimia.");
-                            break;
-                        }
-                        else {
-                            for (Instrument instrument : instruments) {
-                                if (instrument instanceof StringInstrument) {
-                                    ((StringInstrument) instrument).tune();
-                                }
+                        for (Instrument instrument : instruments) {
+                            if (instrument instanceof StringInstrument) {
+                                ((StringInstrument) instrument).tune();
                             }
                         }
                         break;
+
 
 
                     case 4:
-                        if (instruments.isEmpty()) {
-                            System.out.println("Ei lisättyjä soittimia.");
-                            break;
-                        }
-                        else {
-                            for (Instrument instrument : instruments) {
-                                if (instrument instanceof Drum) {
-                                    ((Drum) instrument).playBeat();
-                                }
+
+                        for (Instrument instrument : instruments) {
+                            if (instrument instanceof Drum) {
+                                ((Drum) instrument).playBeat();
                             }
                         }
                         break;
+
 
                     case 0:
                         exit = true;
