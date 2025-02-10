@@ -57,7 +57,7 @@ public class App
                     case 3:
                         for (Instrument instrument : instruments) {
                             if (instrument instanceof StringInstrument) {
-                                ((StringInstrument) instrument).tune(instrument);
+                                ((StringInstrument) instrument).tune();
                             }
                         }
                         break;
