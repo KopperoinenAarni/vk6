@@ -53,9 +53,9 @@ public class App
 
                     case 2:
                         for (Instrument instrument : Instrument.getInstruments()) {
-                            instrument.getDetails();
+                            System.out.println(Instrument.getDetails)
                         }
-                        break;
+                    break;
 
 
                     case 3:

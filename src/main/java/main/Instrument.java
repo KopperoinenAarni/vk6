@@ -35,4 +35,8 @@ public class Instrument {
         return instruments;
     }
 
+    public void getDetails() {
+        System.out.println("Valmistaja: " + manufacturer + ", Hinta: " + price + "e");
+    }
+
 }
