@@ -2,13 +2,10 @@ package main;
 import java.util.ArrayList;
 import java.util.Scanner;
 
- 
-
 public class App 
 {
     public static void main( String[] args )
     {
-
         ArrayList<Instrument> instruments = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
@@ -52,24 +49,21 @@ public class App
                         break;
 
                     case 2:
-                        for (Instrument instrument : Instrument.getInstruments()) {
-                            System.out.println(Instrument.getDetails)
+                        for (Instrument instrument : instruments) {
+                            System.out.println("Valmistaja: " + instrument.getManufacturer() + ", Hinta: " + instrument.getPrice() + "e");
                         }
                     break;
 
-
                     case 3:
-                        for (Instrument instrument : Instrument.getInstruments()) {
+                        for (Instrument instrument : instruments) {
                             if (instrument instanceof StringInstrument) {
                                 ((StringInstrument) instrument).tune(instrument);
                             }
                         }
                         break;
 
-
-
                     case 4:
-                        for (Instrument instrument : Instrument.getInstruments()) {
+                        for (Instrument instrument : instruments) {
                             if (instrument instanceof Drum) {
                                 ((Drum) instrument).playBeat();
                             }
