@@ -41,7 +41,7 @@ public class App
                             Drum drum = new Drum(setManufacturer, setPrice);
                             instruments.add(drum);
                         } else {
-                            System.out.println("Virheellinen soitintyyppi!");
+                            System.out.println("Virheellinen soitinvalinta.");
                             break;
                         }
 
