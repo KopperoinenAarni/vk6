@@ -5,6 +5,7 @@ public class StringInstrument extends Instrument {
 
     public StringInstrument(String manufacturer, int price, int numberOfStrings) {
         super(manufacturer, price);
+        this.numberOfStrings = numberOfStrings;
     }
     
     public void tune() {
